@@ -1,4 +1,6 @@
 @charset "UTF-8";
 
-/* Publications */
-
+/* News */
+blockquote p {
+    font-size: 0.8em !important;
+}
