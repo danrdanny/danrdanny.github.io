@@ -14,9 +14,8 @@ a:hover {
 
 /* Section titles */
 
-.sections {
-  font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-  color: #659AD2;
+.h2 {
+  text-color: #659AD2;
   text-align: center;
   font-weight: normal;
 }
