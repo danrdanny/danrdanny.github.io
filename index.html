@@ -10,13 +10,19 @@
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-    <style type="text/css">
-    .bg-black {}
-    </style>
+    <style type="text/css">.bg-black {}</style>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
   </head>
 
 <body>
+	
+	
+<!---Navbar--->	
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="#"><img src="images/MillerLabLogo-Mark-Reverse.png" alt="Miller Lab" width="60" id="Home"></a>
@@ -29,7 +35,7 @@
 				aria-label="Toggle navigation"> 
 			<span class="navbar-toggler-icon"></span> 
 		</button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"> 
 			  <a class="nav-link text-white" href="#top">Home 
@@ -45,15 +51,17 @@
           <li class="nav-item"> 
 			  <a class="nav-link text-white" href="#Publications">Publications</a> </li>
           <li class="nav-item"> 
-			  <a class="nav-link text-white" href="#Positions">Positions</a> </li>
+			  <a class="nav-link text-white" href="#Join">Join us!</a> </li>
           <li class="nav-item"> 
-			  <a class="nav-link text-white" href="#Contact">Contact</a> </li>
+			  <a class="nav-link text-white" href="#Support">Support</a> </li>
           <li class="nav-item"> 
-			  <a class="nav-link" style="color:#659AD2" href="/1000G-ONT.html" target="_blank" rel="noopener noreferrer">1000G ONT</a> </li>			
+			  <a class="nav-link" style="color:#659AD2" href="/1000G-ONT.html" target="_blank" rel="noopener noreferrer">1000G ONT</a> </li>	
         </ul>
       </div>
     </nav>
-
+ 
+	
+<!---Mission--->	
 	
     <header>
       <div class="jumbotron rounded-0 bg-black" style="background-image: url(images/AdobeStock_177736569v4.png)">
@@ -66,7 +74,7 @@
 					<h5 class="text-center text-white-50"><strong>University of Washington&nbsp;&nbsp; </strong>|<strong> &nbsp; Department of Pediatrics&nbsp;&nbsp; </strong>|<strong> &nbsp; Department of Laboratory Medicine &amp; Pathology</strong></h5>
 						<br><p class="text-center text-white"> Around 50% of individuals with a suspected genetic disorder remain undiagnosed after a complete clinical evaluation, which often takes years to complete. We believe this burden on patients and families is simply too high. In the Miller Lab, our goals are twofold: to improve the efficiency and effectiveness of genetic testing, and to better understand human genetic disease through the identification and characterization of novel disease-causing variation.</p>
 				<br>
-    	          		<p class="text-center"><a class="btn btn-primary btn-group-sm" href="#Services" role="button">Sequencing Services</a></p>
+    	          		<p class="text-center"><a class="btn" href="#Services" role="button"><small><strong>SEQUENCING SERVICES »</strong></small></a></p>
 				<br>
             </div>
           </div>
@@ -75,18 +83,20 @@
     </header>
 	
 	
+<!---Lab members--->	
+	
 	<section>
       <div class="container" id="People">
-        <div class="row" >
-          <div class="col-lg-12 mb-4 mt-3 text-center">
-            <h2 style="color:#659AD2" >OUR TEAM</h2>
+        <div class="row">
+          <div class="col-lg-12 mb-4 mt-3 text-center"><br><br>
+            <h2 class="sections">OUR TEAM</h2>
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-4">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/Danny140x140.png" data-holder-rendered="true">
+            <img class="rounded-circle" alt="140x140" src="images/Danny140x140.png" data-holder-rendered="true">
             <h3 class="mb-0">Danny Miller, MD, PhD</h3>
 			<p class="mb-0">Principal Investigator</p>
 			<a href="mailto: dm1@uw.edu"><img style="width: 35px" src="images/envelope-icon-red.png" alt="email"></a>&nbsp;&nbsp;<a href="https://github.com/danrdanny" target="_blank" rel="noopener noreferrer"><img style="width: 30px" src="images/GitHub-Mark-32px.png" alt="github"></a>&nbsp;<a href="https://twitter.com/danrdanny" target="_blank" rel="noopener noreferrer"><img style="width: 30px" src="images/Twitter icon.png" alt="twitter"></a>
@@ -103,36 +113,78 @@
             <p class="mb-0">Research Scientist</p>
 			<a href="mailto: reedp7@uw.edu"><img style="width: 35px" src="images/envelope-icon-red.png" alt="email"></a>
           </div>
-<!---     <div class="col-lg-4 col-md-6 col-sm-12 text-center mb-4">
-            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/Angie.jpg" data-holder-rendered="true">
-            <h3 class="mb-0">Angie Miller</h3>
-            <p class="mb-0">Research Coordinator</p>
-			<a><img style="width: 35px" src="images/envelope-icon-red.png" alt="email"></a>
-          </div>
-		  --->
-        </div>
+
+        </div><br><br>
 	  </div>
   </section>
 
-
+	
+<!---News--->
+	
   <section>
       <div class="container" id="News">
         <div class="row">
-          <div class="col-sm-12 mt-2 mb-4 text-center">
-            <hr><br>
-			  <h2 style="color:#659AD2">NEWS &amp; VIEWS</h2>
+          <div class="col-sm-12 mt-2 text-center">
+            <hr><br><br><br>
+			  <h2 class="sections">NEWS &amp; VIEWS</h2>
           </div>
         </div>
 	  </div>  
-  </section>
-	
+	</section>
+
 	<div id="carousel">
+<!---		  
+		<div class="card" style="width: 24rem;">
+  			<img src="..." class="card-img-top" alt="">
+  			<div class="card-body">
+			<p style="color:#CECECE"><small>2022.</small></p>
+    		<h5 class="card-title">Title</h5>
+    		<p class="card-text">Text </p>
+    		<a href="" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>LEARN MORE</strong></small></a>
+  			</div>
+		</div>
+---> 			
+		<div class="card" style="width: 24rem;">
+		  	<div class="card-body">
+			<p style="color:#CECECE"><small>2022.09.13</small><br><img src="images/News-img_3-hr-LRS.jpg" class="mt-1 shadow-none" style="border-radius: 0%; width: 55%" alt="3-hour WGS figure"></p>
+    		<h5 class="card-title">3-hr ultra-rapid long-read WGS of a newborn</h5>
+    		<p class="card-text">We did a thing! Using ONT long-read sequencing, we determined a newborn's genetic risk within three hours of the infant's birth. Check out the preprint.<br><big>&#8681;</big><br>
+    		<a href="https://www.medrxiv.org/content/10.1101/2022.09.09.22279746v1" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>READ THE PAPER »</strong></small></a></p>
+  			</div>
+		</div>	
+		
+		<div class="card" style="width: 24rem;">
+		  	<div class="card-body">
+			<p style="color:#CECECE"><small>2022.09.09</small></p>
+    		<h5 class="card-title">Open postdoc position in the Miller Lab</h5>
+    		<p class="card-text">We're currently recruiting for a postdoc position. Ideal candidates should have programming knowledge as well as wet lab experience and an interest in long-read sequencing. </p>
+    		<a href="https://apply.interfolio.com/112805" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>APPLY HERE »</strong></small></a>
+  			</div>
+		</div>
+		
+		<div class="card" style="width: 24rem;">
+  			<div class="card-body">
+			<p style="color:#CECECE"><small>2022.07.15</small><br><a href="https:/1000G-ONT.html" target="_blank" rel="noopener noreferrer"><img src="images/1000G-ONT-logo.png" class="mt-1" style="border-radius: 50%; width: 50%" alt="1000G ONT Sequencing Consortium logo"></a></p>
+    		<h5 class="card-title">1000G ONT in the news</h5>
+    		<p class="card-text">Nice <a href="https://www.genomeweb.com/sequencing/nanopore-sequencing-project-aims-augment-existing-1000-genomes-dataset#.Yx6zbC-B1pQ" target="_blank" rel="noopener noreferrer" style="color:#B73822">writeup on GenomeWeb</a> about our project to sequence 500 of the 1000 Genomes Project samples using Nanopore. Excited to work on this with Evan Eichler and about a hundred other folks!</p>
+  			</div>
+		</div>
+		
+		<div class="card" style="width: 24rem;">
+  			<div class="card-body">
+			<p style="color:#CECECE"><small>2022.07.08</small></p>
+    		<h5 class="card-title">First ONT sequencing run in the Miller Lab...</h5>
+				<p class="card-text">Lots of green!<br><big>&#128077;</big></p>
+				<img src="images/MillerLab_1st-ONT-sequencing-run_2022-07-08.jpg" class="card-img" alt="1st ONT sequencing run in the Miller Lab">
+  			</div>
+		</div>
+		
 		<div class="card" style="width: 24rem;">
   			<div class="card-body">
 			<p style="color:#CECECE"><small>2022.05.13</small></p>
     		<h5 class="card-title">LRS of 1000 Genomes samples</h5>
     		<p class="card-text">We're excited to collaborate with ONT to sequence 500 of the 1000 Genomes samples. If you're interested in working on this project or joining the 1000G ONT Sequencing Consortium, please <a href="mailto: dm1@uw.edu?Subject=Joining the 1000G ONT Sequencing Consortium" style="color:#B73822">reach out.</a></p>
-    		<a href="/1000G-ONT.html" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>LEARN MORE</strong></small></a>
+    		<a href="/1000G-ONT.html" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>LEARN MORE »</strong></small></a>
   			</div>
 		</div>	
 		  
@@ -140,7 +192,7 @@
   			<div class="card-body">
 			<p style="color:#CECECE"><small>2022.05.12</small></p>
     		<h5 class="card-title">Hello, world</h5>
-    		<p class="card-text">Hi folks, we're opening our lab in July 2022 in the Departments of Pediatrics and Laboratory Medicine &amp; Pathology at the University of Washington. We use long-read sequencing on the Oxford Nanopore platform to find the genetic basis for unsolved  genetic disorders. If you have interesting unsolved cases, <a href="mailto: dm1@uw.edu?Subject=Unsolved genetics case" style="color:#B73822">drop us a note</a>. We love collaborating on tricky problems!</p>
+    		<p class="card-text">Hi folks, we're opening our lab in July 2022 in the Departments of Pediatrics and Laboratory Medicine &amp; Pathology at the University of Washington. We use long-read sequencing on the Oxford Nanopore platform to find the genetic basis for rare  genetic disorders. If you have interesting unsolved cases, <a href="mailto: dm1@uw.edu?Subject=Unsolved genetics case" style="color:#B73822">drop us a note</a>. We love collaborating on tricky problems!</p>
   			</div>
 		</div>	
 		  
@@ -149,7 +201,7 @@
 			<p style="color:#CECECE"><small>2022.04.29</small></p>
     		<h5 class="card-title">Backstory about the T2T project</h5>
     		<p class="card-text">Danny's contribution to the <a href="https://sites.google.com/ucsc.edu/t2tworkinggroup" target="_blank" rel="noopener noreferrer" style="color:#B73822">Telomere-to-Telomere</a> project was highlighted by the Brotman Baty Institute. </p>
-    		<a href="https://brotmanbaty.org/news/the-backstory-of-the-first-complete-sequence-of-the-human-genome" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>LEARN MORE</strong></small></a>
+    		<a href="https://brotmanbaty.org/news/the-backstory-of-the-first-complete-sequence-of-the-human-genome" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>LEARN MORE »</strong></small></a>
   			</div>
 		</div>	
 
@@ -163,102 +215,16 @@
 		  
 		<div class="card" style="width: 24rem;">
   			<div class="card-body">
-			<p style="color:#CECECE"><small>2022.04.25</small></p>
-    		<h5 class="card-title">Want to work with us?</h5>
-    		<p class="card-text">We have open postdoc, technician, and grad student positions. <a href="mailto: dm1@uw.edu?Subject=Miller Lab position inquiry" style="color:#B73822">Send us a message</a> if you're interested in joining our lab, and check out more details in the <a href="#Positions" style="color:#B73822">Positions</a> section below. </p>
-  			</div>
-		</div>	
-		  
-		<div class="card" style="width: 24rem;">
-  			<div class="card-body">
 			<p style="color:#CECECE"><small>2022.11.21</small></p>
     		<h5 class="card-title">Woot!</h5>
     		<p class="card-text">Danny's targeted long-read sequencing paper was highlighted in <a href="https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.61711" target="_blank" rel="noopener noreferrer" style="color:#B73822">AJMG</a>, <a href="https://bit.ly/30a8iyy" target="_blank" rel="noopener noreferrer" style="color:#B73822">GenomeWeb</a>, and <a href="https://bit.ly/3DwnaVn" target="_blank" rel="noopener noreferrer" style="color:#B73822">ClinicalOMICS</a>! </p>
-    		<a href="https://www.cell.com/ajhg/fulltext/S0002-9297(21)00230-5" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>READ THE PAPER</strong></small></a>
+    		<a href="https://www.cell.com/ajhg/fulltext/S0002-9297(21)00230-5" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>READ THE PAPER »</strong></small></a>
   			</div>
 		</div>	 
-<!---		  
-		<div class="card" style="width: 24rem;">
-  			<img src="..." class="card-img-top" alt="">
-  			<div class="card-body">
-			<p style="color:#CECECE"><small>2022.</small></p>
-    		<h5 class="card-title">Title</h5>
-    		<p class="card-text">Text </p>
-    		<a href="" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>LEARN MORE</strong></small></a>
-  			</div>
-		</div>
-
-		<div class="card" style="width: 24rem;">
-  			<img src="..." class="card-img-top" alt="">
-  			<div class="card-body">
-			<p style="color:#CECECE"><small>2022.</small></p>
-    		<h5 class="card-title">Title</h5>
-    		<p class="card-text">Text </p>
-    		<a href="" target="_blank" rel="noopener noreferrer" class="btn"><small><strong>LEARN MORE</strong></small></a>
-  			</div>
-		</div>
----> 	
-		
-	</div>
-
+	</div><br><br>
 	
-	<!---
-  <section>
-      <div class="container" id="">
-        <div class="row">
-          <div class="col-sm-12 mt-2 mb-4 text-center">
-            <hr><br>
-			  <h2 style="color:#659AD2">NEWS &amp; VIEWS</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <h5 class="mb-0 col-lg-11"><strong>We're sequencing 1000 Genomes samples</strong></h5>
-				<p class="mb-0 col-lg-11">We're excited to collaborate with ONT to sequence 500 of the 1000 Genomes samples. If you're interested in working on this project or joining the 1000G ONT Sequencing Consortium, please <a href="mailto: dm1@uw.edu?Subject=Joining the 1000G ONT Sequencing Consortium" style="color:#B73822">reach out</a>. This will be a fun dataset to explore! More details on the <a href="/1000G-ONT.html" target="_blank" rel="noopener noreferrer" style="color:#B73822">1000G ONT consortium</a> site.</p>
-			  	<p class="blockquote-footer col-lg-11">May 13, 2022<br><br></p>               
-            </blockquote>
-          </div>
-          <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <h5 class="mb-0 col-lg-11"><strong>Hello, World</strong></h5>
-				<p class="mb-0 col-lg-11">Hi folks, we're opening our lab in July 2022 in the Departments of Pediatrics and Laboratory Medicine &amp; Pathology at the University of Washington. We use long-read sequencing on the Oxford Nanopore platform to find the genetic basis for unsolved  genetic disorders. If you have interesting unsolved cases, <a href="mailto: dm1@uw.edu?Subject=Unsolved genetics case" style="color:#B73822">drop us a note</a>. We love collaborating on tricky problems!</p>
-			  	<p class="blockquote-footer col-lg-11">May 12 , 2022<br><br></p>               
-            </blockquote>
-          </div>
-		  <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <h5 class="mb-0 col-lg-11"><strong>Backstory about the T2T project</strong></h5>
-				<p class="mb-0 col-lg-11">Danny's contribution to the <a href="https://sites.google.com/ucsc.edu/t2tworkinggroup" target="_blank" rel="noopener noreferrer" style="color:#B73822">Telomere-to-Telomere</a> project was highlighted <a href="https://brotmanbaty.org/news/the-backstory-of-the-first-complete-sequence-of-the-human-genome" target="_blank" rel="noopener noreferrer" style="color:#B73822">here</a> by the Brotman Baty Institute.</p>
-			  	<p class="blockquote-footer col-lg-11">April 29 , 2022<br><br></p>               
-            </blockquote>
-          </div>
-		  <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <h5 class="mb-0 col-lg-11"><strong>Smith Workshop</strong></h5>
-              	<p class="mb-0 col-lg-11">We're sequencing cases that will be presented during the Unsolved session at the 2022 <a href="https://www.dwsmith.org" target="_blank" rel="noopener noreferrer" style="color:#B73822">David W. Smith Workshop</a> this August. If you're attending the meeting and have an unsolved genetics case, <a href="mailto: dm1@uw.edu?Subject=Smith meeting Unsolved session" style="color:#B73822">let us know!</a></p>
-			  	<p class="blockquote-footer col-lg-11">April 25, 2022<br><br></p>
-          	</blockquote>
-          </div>
-          <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <h5 class="mb-0 col-lg-11"><strong>Want to work with us?</strong></h5>
-              	<p class="mb-0 col-lg-11">We have open postdoc, technician, and grad student positions. <a href="mailto: dm1@uw.edu?Subject=Miller Lab position inquiry" style="color:#B73822">Send us a message</a> if you're interested in joining our lab, and check out more details in the <a href="#Positions" style="color:#B73822">Positions</a> section below.</p>
-			 	<p class="blockquote-footer col-lg-11">April 25, 2022<br><br></p>
-         	</blockquote>
-          </div>
-	      <div class="col-sm-6 col-lg-6">
-            <blockquote class="blockquote">
-              <h5 class="mb-0 col-lg-11"><strong>Woot!</strong></h5>
-              	<p class="mb-0 col-lg-11">Danny's targeted long-read sequencing paper was highlighted in <a href="https://onlinelibrary.wiley.com/doi/10.1002/ajmg.a.61711" target="_blank" rel="noopener noreferrer" style="color:#B73822">AJMG</a>, <a href="https://bit.ly/30a8iyy" target="_blank" rel="noopener noreferrer" style="color:#B73822">GenomeWeb</a>, and <a href="https://bit.ly/3DwnaVn" target="_blank" rel="noopener noreferrer" style="color:#B73822">ClinicalOMICS</a>!</p>
-				<p class="blockquote-footer col-lg-11">November 21, 2021<br><br></p>
-            </blockquote>
-          </div>		
-		  <br>
- 		</div>
-       </div>
-	</section>
-	--->
+	
+<!---Research--->	
 	
 	<section>
 		<br><br>
@@ -267,15 +233,14 @@
 	  <br>
 		<div class="container">
 	        <div class="row">
-	          <div class="col-12 mt-3 mb-4 text-center">
-	            <h2 style="color:#659AD2">RESEARCH</h2>
+	          <div class="col-12 mt-3 mb-4">
+	            <h2 class="sections">RESEARCH</h2>
 	          </div>
 	        </div>
 	        <div class="row">
 	          <div class="col-sm-6 col-lg-4">
 	            <h3>Unsolved genetic disorders</h3>
 					<p class="mb-5"> We are interested in understanding why 50% of individuals with a suspected genetic disorder remain unsolved after a complete clinical evaluation. Using long-read DNA and RNA seqeuencing we have identified disease-causing variants that are difficult or impossible to resolve using standard clinical testing. We are always happy to collaborate, so reach out if you have a challenging unsolved case.</p>
-<!--- <p><a class="btn btn-link btn-light btn-sm" href="http://www.___">View details »</a></p> --->
        	  	  </div>
 			  <div class="col-sm-6 col-lg-4">
       	      	<h3>Clinical applications of long-read sequencing</h3>
@@ -285,7 +250,7 @@
        	     	<h3>Structural variation</h3>
        	     		<p class="mb-5"> A big challenge when analyzing long-read sequencing data is interperting all of the structural variants that are found. In collaboration with Oxford Nanopore, we are seqeuencing a large number of 1000G Project samples to understand what normal human structural variation looks like and to build a database of controls for everyone to use. Check out the 1000G ONT Consortium site for more information.
 					<br>
-       		 		<a class="btn btn-link btn-light btn-sm" href="/1000G-ONT.html" target="_blank" rel="noopener noreferrer"><strong>View details »</strong></a></p>
+       		 		<a class="btn btn-link mt-2 text-white" href="/1000G-ONT.html" target="_blank" rel="noopener noreferrer"><small><strong>LEARN MORE »</strong></small></a></p>
        	   	  </div>
        	   	  <div class="col-sm-6 col-lg-4">
        	     	<h3>Methylation</h3>
@@ -300,16 +265,12 @@
         	    	<p class="mb-5"> Sequencing of native RNA is just cool. We do RNA seqeuncing of our unsolved clinical cases and are interested in using long reads to identify tissue-specific isoforms and expression. Also, what are all those RNA modifications doing? Sequencing of native RNA from different tissues is going to be interesting.</p>
       	      </div>
         	</div>
-			<!---
-			<div class="col-sm-6 col-lg-4">
-      	      	<h3>X-linked disorders in females&nbsp;</h3>
-      	      	<p class="mb-5"> <em class="icon-desktop "></em> Males aren't the only ones affected by X-linked disorders! We are interested in using long-read sequencing to understand why some women are affected with X-linked disorders.</p>
-        	  </div>
-			--->
-      	</div>
+      	 </div>
 	  </div>
     </section>
 	
+	
+<!---Services--->	
 	
 	<section id="Services">
 	  <div>
@@ -319,8 +280,9 @@
 	          <div class="col-12 mb-2 text-center">
 				<br>
            		<img class="rounded-circle mb-2" alt="140x140" style="width: 140px; height: 140px;" src="images/SequencingServices2-AdobeStock_162464926.png" data-holder-rendered="true">
-				<h2 style="color:#659AD2">SEQUENCING SERVICES</h2>
+				<h2 class="sections">SEQUENCING SERVICES</h2>
 					<p>We provide long-read  sequencing on the Oxford Nanopore Technologies (ONT) platform to researchers at UW, SCH, SCRI, FHRC, external institutions, and private companies. Services include whole-genome sequencing, targeted sequencing, RNA sequencing, variant calling and phasing, and methylation calling. If you are interested in long-read sequencing services, please <a href="mailto:dm1@uw.edu">contact us</a> to discuss options and costs.</p>
+				  
 	<!---			<p>We've also developed the following resources to aid in analyzing long-read data:</p>
 	<div class="container">
         <div class="row">
@@ -344,11 +306,14 @@
 	  </div>
 	</section>
 	
+	
+<!---Publications--->	
+	
 	<section id="Publications">	
 	  <img class="embed-responsive" src="images/Banner-Publications-AdobeStock_187091297v2.jpg" alt="Typewriter">
 		<br>
 		<div class="container">
-			<h2 class="text-center" style="color:#659AD2">PUBLICATIONS</h2>
+			<h2 class="sections">PUBLICATIONS</h2>
 				<div class="col-12">
 			   		<h5><strong>2022</strong></h5>
 			      	  <ul style="padding-left:1.2em" class="mb-4">
@@ -374,16 +339,16 @@
 					<hr>
 					
 				<div class="text-center">	
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2020" aria-expanded="false" aria-controls="pubs2020" style="color:#B73822">2020</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2019" aria-expanded="false" aria-controls="pubs2019" style="color:#B73822">2019</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2018" aria-expanded="false" aria-controls="pubs2018" style="color:#B73822">2018</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2016" aria-expanded="false" aria-controls="pubs2016" style="color:#B73822">2016</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2015" aria-expanded="false" aria-controls="pubs2015" style="color:#B73822">2015</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2014" aria-expanded="false" aria-controls="pubs2014" style="color:#B73822">2014</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2013" aria-expanded="false" aria-controls="pubs2013" style="color:#B73822">2013</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2012" aria-expanded="false" aria-controls="pubs2012" style="color:#B73822">2012</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2011" aria-expanded="false" aria-controls="pubs2011" style="color:#B73822">2011</button> | 
-					<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#pubs2010" aria-expanded="false" aria-controls="pubs2010" style="color:#B73822">2010</button>
+					<button type="button" class="pubs-btn btn-link mr-1" data-toggle="collapse" data-target="#pubs2020" aria-expanded="false" aria-controls="pubs2020" style="color:#B73822">2020</button>
+					<button type="button" class="pubs-btn btn-link mr-1" data-toggle="collapse" data-target="#pubs2019" aria-expanded="false" aria-controls="pubs2019" style="color:#B73822">2019</button>
+					<button type="button" class="pubs-btn btn-link mr-1" data-toggle="collapse" data-target="#pubs2018" aria-expanded="false" aria-controls="pubs2018" style="color:#B73822">2018</button>
+					<button type="button" class="pubs-btn btn-link mr-1" data-toggle="collapse" data-target="#pubs2016" aria-expanded="false" aria-controls="pubs2016" style="color:#B73822">2016</button>
+					<button type="button" class="pubs-btn btn-link mr-1" data-toggle="collapse" data-target="#pubs2015" aria-expanded="false" aria-controls="pubs2015" style="color:#B73822">2015</button>
+					<button type="button" class="pubs-btn btn-link mr-1 mr-1" data-toggle="collapse" data-target="#pubs2014" aria-expanded="false" aria-controls="pubs2014" style="color:#B73822">2014</button>
+					<button type="button" class="pubs-btn btn-link mr-1" data-toggle="collapse" data-target="#pubs2013" aria-expanded="false" aria-controls="pubs2013" style="color:#B73822">2013</button>
+					<button type="button" class="pubs-btn btn-link mr-1" data-toggle="collapse" data-target="#pubs2012" aria-expanded="false" aria-controls="pubs2012" style="color:#B73822">2012</button>
+					<button type="button" class="pubs-btn btn-link mr-1" data-toggle="collapse" data-target="#pubs2011" aria-expanded="false" aria-controls="pubs2011" style="color:#B73822">2011</button>
+					<button type="button" class="pubs-btn btn-link" data-toggle="collapse" data-target="#pubs2010" aria-expanded="false" aria-controls="pubs2010" style="color:#B73822">2010</button>
 				</div>
 					
 					<ul class="collapse mt-4" id="pubs2020">
@@ -470,132 +435,87 @@
 	</section>			
 	
 	
-	<section id="Positions">
+<!---Join--->		
+	
+	<section id="Join">
 	  <div style="background-color:#e9ecef">
-		<br>	  
+		<br><br><br><br>  
 		<div class="container">
 	        <div class="row">
 	          <div class="col-12 mt-3 mb-4">
-	            <h2 style="color:#659AD2" class="text-center">POSITIONS</h2>
-				<p>We're a new lab, so we have several positions to fill. Although our lab is heavily computational, benchwork is also necessary. In the Miller Lab, you'll be joining a friendly, hardworking group of people with diverse backgrounds. Danny (a runner, and a former programmer and financial analyst) is a Pediatrician and Medical Geneticist with extensive experience analyzing long-read ONT data. If you're looking for a fun, collaborative, and productive work environment, we'd love to hear from you! Please email Danny at <a href="mailto:dm1@uw.edu?Subject=Miller Lab position inquiry">dm1@uw.edu</a> with any inquiries.</p>
+	            <h2 class="sections">JOIN US!</h2>
+				<p>We have several available positions in the Miller Lab. Although our lab is heavily computational, benchwork is also necessary. You'll be joining a friendly group of people with diverse backgrounds. Danny (a runner, and a former programmer and financial analyst) is a Pediatrician and Medical Geneticist with extensive experience analyzing long-read ONT data. If you're looking for a fun, collaborative, and productive work environment, we'd love to hear from you! Please email Danny <a href="mailto: dm1@uw.edu?Subject=Miller Lab position inquiry"><img style="width: 30px" src="images/envelope-icon-red.png" alt="email"></a> with any inquiries.</p>
 				<br>
               </div>
 	        </div>
 			
 	        <div class="row">
 	          <div class="col-sm-6 col-lg-4">
-	            <h4>Postdoctoral Researchers</h4>
-				<p class="mb-4"> We're currently recruiting for postdoc positions. Ideal candidates should have programming knowledge as well as wet lab experience and an interest in long-read sequencing.</p>
-<!---       		    <p><a class="btn btn-link btn-light btn-sm" href="http://www.___.com">View details »</a></p>		--->
+	            <h4>Postdoctoral Researcher</h4>
+				<p class="mb-3"> We're currently recruiting for a postdoc position. Ideal candidates should have programming knowledge as well as wet lab experience and an interest in long-read sequencing. Click below for more information.</p>
+      		    <p><a class="btn btn-link" href="https://apply.interfolio.com/112805" target="_blank" rel="noopener noreferrer"><small><strong>LEARN MORE »</strong></small></a></p>		
 			<br>
        	  	  </div>
        	   	  <div class="col-sm-6 col-lg-4">
        	     	<h4>Graduate students</h4>
-       	     	<p class="mb-4"> Graduate students who want to learn more about long-read DNA or RNA sequencing, structural variation, genome assembly, or developing long-read-sequencing-based clinical tests are encouraged to rotate in our lab.</p>
+       	     	<p class="mb-4"> Mentoring students is one of our most important responsibilities. Grad students who want to learn more about long-read DNA or RNA sequencing, structural variation, genome assembly, or developing long-read-sequencing-based clinical tests are encouraged to rotate in our lab.</p>
 			<br>
        	   	  </div>
        	   	  <div class="col-sm-6 col-lg-4">
        	     	<h4>Undergraduates</h4>
-       	     	<p class="mb-4">We welcome undergraduate students in our lab. Please reach out if you're interested!</p>
-				<br>
+       	     	<p class="mb-4">We also welcome undergraduate students in our lab. Please reach out if you're interested!</p>
 	          </div>
-			</div>
+			</div>				<br><br><br>
+
 		</div>
 	  </div>
 	</section>
-<!---	
-	<section>		
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8 mx-auto">
-          <div class="jumbotron">
-            <div class="row text-center">
-				
-              <div class="text-center col-12">
-                <h2>Request a free quote</h2>
-              </div>
-              <div class="text-center col-12"> --->
-                <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
-<!---	
-                <form id="feedbackForm" class="text-center">
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp">
-                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
-                    <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea rows="10" cols="100" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="messageHelp"></textarea>
-                    <span id="messageHelp" class="form-text text-muted" style="display: none;">Please enter a message.</span>
-                  </div>
-                  <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg"> Send</button>
-                </form>
-              </div>
-				
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-	</section>	
---->
 	
+
 	
-<!---			
-	<section>
-      <div class="jumbotron">
-        <div class="container">
-			
-          <div class="row">
-            <div class="text-center col-md-8 col-12 mx-auto">
-              <p class="lead">If you would like&nbsp;</p>
-            </div>
-          </div>
-			
-          <div class="row">
-            <div class="col-sm-4 col-auto mx-auto"> <a class="btn btn-block btn-lg btn-success" href="#" title="">Sign up now!</a> 
-			</div>
-          </div>
-			
-        </div>
-      </div>
-	</section>
-	--->
+<!---Support--->	
 	
-	
-	<section id="Contact">
+	<section id="Support">
 	  <div class="bg-dark">
-	  <br>
+	  <br><br><br>
 		<div class="container">
 	        <div class="row">
-	          <div class="col-12 mt-3 mb-4 text-center">
-	            <h2 style="color:#659AD2">CONTACT INFORMATION</h2>
+	          <div class="col-12 mt-3 mb-4">
+            	<h2 class="sections">SUPPORT</h2>
+					<p class="text-center text-white" style="padding-left: 6%; padding-right: 6%">We are grateful for the generous support  our research program receives from the Brotman Baty Institute for Precision Medicine.</p>
 	          </div>
 	        </div>
 	        <div class="row">
-	          <div class="col-sm-6 col-lg-4 col-xl-2 offset-xl-2">
-	            <p class="mb-0 text-center"><img src="images/envelope-icon-red.png" style="height:30px" alt="EMAIL"></p>
-				<p class="mb-5 text-center"><a href="mailto:dm1@uw.edu" style="color:white">dm1@uw.edu</a></p>
-       	  	  </div>
-  	  <div class="col-sm-6 col-lg-4 col-xl-2 offset-xl-1">
-<!---  	     	<p class="mb-0 text-center"><img src="images/phone-icon.png" style="height:30px" alt="PHONE"></p>
- 				<p class="mb-5 text-white text-center">(678) 522-8169</p>	--->
-       	   	  </div>	
-       	   	  <div class="col-sm-6 col-lg-4 col-xl-2 offset-xl-1">
-       	     	<p class="mb-0 text-center"><img src="images/Twitter icon.png" style="height:30px" alt="TWITTER"></p>
-				<p class="mb-5 text-white text-center">@danrdanny</p>
-      	      </div>		
-	        </div>	
+	          	<div class="col-sm-6 col-lg-4 col-xl-2 offset-xl-1">
+	            	<p class="mb-10 text-center"><img class="card-img" src="images/BBI_wrk_logo-500x190.png" style="width: 170px; background-color: white; border-radius: 0.4em" alt="BBI logo"></p>
+
+       	  	  	</div>
+   	   	  	  <div class="col-sm-6 col-lg-4 offset-xl-0 text-white col-xl-8">
+			 		 <h6 style="color: #659AD2">CURRENT FUNDING</h6>
+					  <ul>
+						  <li class="mb-1">Brotman Baty Institute : <strong>Establishment of a long-read sequencing cost center</strong>. (2021–2024) Miller DE (PI).</li>
+						  <li class="mb-1">Brotman Baty Institute (2022 Catalytic Collaborations): <strong>Investigation of new molecular diagnostics for mitochondrial disorders</strong>. (2022–2023) Miller DE (Co-PI).</li>					
+					  </ul>
+				  <h6 style="color: #659AD2">PREVIOUS FUNDING</h6>
+						<ul>
+							<li class="mb-1">Brotman Baty Institute (2021 Catalytic Collaborations) Targeted long-read sequencing to resolve complex structural variants and identify missing variants. (2021-2022) Miller DE (PI).</li>
+							<li class="mb-1">Brotman Baty Institute (2019 Catalytic Collaborations) Long-read whole-genome sequencing of unsolved Mendelian cases of disease. (2020-2021) Miller DE (Co-PI).</li>
+						</ul>					
+			  </div>  
+			</div>
+			<div class="row text-white mt-4 ml-5 mr-5">
+				<h6 style="color: #659AD2">MAKE A DONATION</h6>
+					<p class="text-white">We appreciate your interest in our research. If you would like to make a contribution to a Miller Lab study, please write a brief letter designating the funds to research by Danny E. Miller, MD, PhD, and indicate the name of the study you wish to support. Include your name and address in the letter, and send it with a check or money order to:</p>
+					<p class="text-white">Miller Laboratory, Department of Pediatrics<br>University of Washington<br>1959 NE Pacific Street, Box 356320<br>Seattle, WA 98195-6320</p>
+			</div>
+		  <br><br>
 		</div>
 	  </div>  
 	</section>
-			
-			
+
+
+<!---Footer--->	
+	
   	<footer class="text-left" style="background-color:#e9ecef">
       <div class="container">
         <div class="row">
@@ -614,10 +534,5 @@
     </footer>
 	
 	
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script src="js/jquery-3.4.1.min.js"></script> 
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <script src="js/popper.min.js"></script> 
-    <script src="js/bootstrap-4.4.1.js"></script>
 </body>
 </html>
