@@ -28,13 +28,14 @@ h2 {
   overflow-x: auto;
 
   margin: 0 auto 0 auto;
-  width: 80vw;
+  width: 88vw;
   height: fit-content;
 }
 
 #carousel::-webkit-scrollbar {
   -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
 }
+
 
 
 .card {
@@ -169,11 +170,11 @@ h2 {
 /* Circular images */
 
 .rounded-circle {
-  width:140px;height:140px;
+  width:200px;height:200px;
   background-color: #eed;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 2em;
 }
