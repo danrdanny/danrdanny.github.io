@@ -138,6 +138,22 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.card4 {
+  width: 250px;
+  margin: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card4 img {
+  width: 100%;
+  margin: 0 auto;
+}
+.card4 .card-title {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #1C8E5F;
+}
+
+
 
 /* Buttons */
 
