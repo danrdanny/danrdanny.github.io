@@ -205,7 +205,32 @@
 <section id="Links" class="mt-5">
 	<div class="container">	
 		<hr><h1 style="color: #0C4E2E" class="text-left">Helpful links, analysis scripts, and other software notes</h1>		
-		<p><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfpCbiUCIyBRNBVSMheIQGrrf9WdQJ2hQHtc6Q4UJOFMP-tqqAPlRLPhRWgMtlXLRlUQdrF-wOcbnt/pubhtml?gid=1985941335&amp;single=true&amp;widget=true&amp;headers=false" style="width: 100%; height: 500px"></iframe></p>
+		<p><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfpCbiUCIyBRNBVSMheIQGrrf9WdQJ2hQHtc6Q4UJOFMP-tqqAPlRLPhRWgMtlXLRlUQdrF-wOcbnt/pubhtml?gid=1985941335&amp;single=true&amp;widget=true&amp;headers=false" class="mb-3" style="width: 100%; height: 500px"></iframe></p>
+		<div>
+			<h5 class="mb-3"><strong>Useful things to know/install when using remote computing systems</strong></h5>
+				<p><strong>You need a text editor!</strong> Really, you do. You may have heard of nano or vi or vim or maybe emacsn, which will be installed on your remote system. These are command line text editors and are great but have a steep learning curve, so I suggest others use a GUI text editor that has the ability to connect to your remote computing system so you can open and save scripts (files) directly to the system you will then use them. The ones I suggest are free and I personally have used them.</p>
+				<p><strong>Mac/OSX: </strong><a href="https://www.barebones.com/products/bbedit/download.html" target="_blank" rel="noopener noreferrer">BBEdit</a>. To connect to your remote computing system, use the "Open from FTP/SFTP" or "Save to FTP/SFTP" options. It will ask you for your server creds, which will look something like...
+					<ul>
+						<li>Server: mangi.smi.umn.edu</li>
+						<li>Check the sftp box</li>
+						<li>Port: 22</li>
+						<li>User: x500</li>
+						<li>Password: your x500 password</li>		
+					</ul>
+				</p>
+				<p><strong>Windows: </strong><a href="https://www.activestate.com/products/komodo-ide/downloads/edit/" target="_blank" rel="noopener noreferrer">Komodo Edit</a> (NOT IDE – big red button is BAD.) You can add a server in the preferences using the same information as above, then use Save to remote or Save as remote to save directly to your remote system.</p>
+				<p><strong>Unix: </strong><a href="https://sites.tufts.edu/cbi/files/2013/01/linux_cheat_sheet.pdf" target="_blank" rel="noopener noreferrer">Cheat sheet.</a> Not complete but these are all useful commands to get you started.</p>
+				<p><strong>How to submit jobs: </strong>Many, many remote compute systems use SLURM to handle job scheduling. SLURM is how you would reserve time, memory and processors on your system to run your script/analysis. There should be information about SLURM and the different partitions you can submit your jobs to provided by your remote computing system but some key SLURM commands are...
+					<ul>
+						<li>sbatch — submit a script to run</li>
+						<li>srun — get an interactive session with resources</li>
+						<li>squeue — check on your jobs</li>
+						<li>scancel - cancel a job</li>
+					</ul>
+				You can ask for resources with sbatch or you can add the submission requests to the top of your script. <a href="https://www.msi.umn.edu/content/job-submission-and-scheduling-slurm" target="_blank" rel="noopener noreferrer">EXAMPLE</a></p>
+
+
+		</div>
 	</div>	
 </section>	
 	
