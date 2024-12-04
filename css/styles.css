@@ -12,7 +12,12 @@ a:hover {
 }
 
 
+
 /* Section titles */
+
+section {
+	scroll-margin-top: 80px;
+}
 
 h2 {
   text-color: #659AD2;
