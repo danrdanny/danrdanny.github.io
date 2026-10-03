@@ -38,9 +38,13 @@
 	          <li class="nav-item">
 			  		<a class="nav-link text-white" href="#Rates">Rates</a> </li>
    	      <li class="nav-item">
-			  		<a class="nav-link text-white" href="#SamplePrep">Sample Preparation</a> </li>
+			  		<a class="nav-link text-white" href="#SamplePrep">Sample Prep</a> </li>
    	      <li class="nav-item">
-				  	<a class="nav-link text-white" href="#Shipping">Shipping</a> </li>
+				  	<a class="nav-link text-white" href="#SampleSubmit">Sample Submission</a> </li>
+<!---   	      <li class="nav-item">
+				  	<a class="nav-link text-white" href="#Data">Data Delivery</a> </li>
+   	      <li class="nav-item">
+				  	<a class="nav-link text-white" href="#Payment">Payment</a> </li> -->
         	</ul>
       </div>
    </nav>
@@ -68,7 +72,7 @@
 						<li>Contact us to discuss your sequencing needs.</li>
 						<li>Look for your cost estimate to be issued via email.</li>
 						<li>We may send you a project intake and/or <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRdopwvstR9OcZdygVceEtkhlLF_UDuHp_uu5RfJ5Ot9gM1u1GNP4MoTi_auR69A/pub?output=xlsx">sample manifest form</a> to submit first. The more completely you fill out the forms, the more accurate your estimate will be.</li>
-						<li>If you would like to proceed, <a href="#SamplePrep">prepare</a> and <a href="#Shipping">ship</a> your samples following the guidelines described below.</li>
+						<li>If you would like to proceed, <a href="#SamplePrep">prepare</a> and <a href="#SampleSubmit">ship</a> your samples following the guidelines described below.</li>
 						<li>We'll notify you when we have received your samples and provide an estimated timeline for the work.</li>
 						<li>If we feel we may not be the best fit for your project needs, we'll let you know and will suggest alternatives.</li>
 					</ul>
@@ -122,9 +126,9 @@
 									</ul>
 
    	       			<h5 style="color:#062E59" class="text-left mt-5"><strong>Analysis</strong></h5>
-				  				<p>One hour of analysis is charged per flow cell. This includes basecalling and running samples through our standard in-house analysis pipeline, which calls 5mCG/5hmCG modifications when sequencing native DNA and multiplexed, barcoded samples. Methylations calls are provided as tags in the unaligned bam files that are returned when sequencing is complete. Our standard pipeline is optimized for human samples; data for other organisms may be delivered in other formats and may incur extra analysis charges.</p>
-								<p>For an added fee, we also  offer a range of additional analysis services that can be tailored to meet the specific needs of your study. For example, our team can assist with tasks such as calling additional methylation models, filtering and prioritizing structural variants, identifying repeat expansions, analyzing other complex variants, and data interpretation support for researchers looking to analyze their own data.</p>
-							<p class="text-left"><strong>We can help you determine which sequencing and analysis services are right for your project. <a href="mailto:MillerLabSeq@uw.edu?Subject=UW NSC Consultation Request">Contact us</a> to set up a consultation and to receive an estimate. </strong></p>
+				  				<p>One hour of analysis is charged for each flow cell. This charge covers computational infrastructure, data storage and transfer, basecalling, and running samples through our standard in-house analysis pipeline. For native DNA, our standard pipeline calls 5mCG/5hmCG modifications and supports multiplexed, barcoded samples. Methylation calls are provided as tags in the unaligned BAM files we deliver when sequencing is complete. Our pipeline is optimized for human samples; data for other organisms may be delivered in other formats and may incur extra analysis charges.</p>
+								<p>Additional analysis services are available for an additional charge and can be tailored to the specific needs of your study. For example, our team can assist with calling additional methylation models, filtering and prioritizing structural variants, identifying repeat expansions, analyzing other complex variants, and providing data interpretation support for researchers who want to analyze their own data.</p>
+							<p class="text-left"><strong>We can help you determine which sequencing and analysis services are right for your project. <a href="mailto:MillerLabSeq@uw.edu?Subject=UW NSC Consultation Request">Contact us</a> to set up a consultation and receive an estimate. </strong></p>
           	</div>
 		  	</div>
       </div>
@@ -293,16 +297,16 @@
 						<p>To limit contamination when collecting saliva, it's important that the individual does not eat or drink for 30 minutes prior to collection. Our current extraction method for saliva samples is the automated <a href="https://www.qiagen.com/us/products/diagnostics-and-clinical-research/sample-processing/qiasymphony-dsp-dna-kits-us?catno=937255" target="_blank" rel="noopener noreferrer">QIAsymphony DSP DNA Midi Kit</a>.</p>
 
 					<h5 style="color:#062E59" class="text-left mt-5"><strong>Cell Pellets</strong></h5>
-						<p>Submit between <strong>1 x 10e5 and 1 x 10e7 cells per pellet</strong>. Cells must be frozen as pellets in Eppendorf tubes. Microcentrifuge tubes should be double-packed into larger conical tubes and shipped in a polystyrene box filled at least halfway with dry ice. Send these samples using next-day delivery service according to the <a id="Shipping">shipping instructions</a> shown below.</p>
+						<p>Submit between <strong>1 x 10e5 and 1 x 10e7 cells per pellet</strong>. Cells must be frozen as pellets in Eppendorf tubes. Microcentrifuge tubes should be double-packed into larger conical tubes and shipped in a polystyrene box filled at least halfway with dry ice. Send these samples using next-day delivery service according to the <a id="SampleSubmit">shipping instructions</a> shown below.</p>
           	</div>
 		  	</div>
       </div>
    </section>
 
 
-	<!---Shipping--->
+	<!---Sample Submission--->
 
-	<section id="Shipping">
+	<section id="SampleSubmit">
 		<div class="container">
 			<hr style="border-color:white">
       </div>
@@ -311,7 +315,7 @@
 		<div class="container">
        	<div class="row">
           	<div class="col-lg-8 mb-4 offset-xl-1 col-xl-10">
-          		<h3 style="color:#659AD2" class="text-left">SAMPLE DELIVERY</h3>
+          		<h3 style="color:#659AD2" class="text-left">SAMPLE SUBMISSION</h3>
 					<hr>
 					<p>If you would like to drop off your samples in person, we accept delivery 10 am – 4 pm on weekdays.</p>
 					<p>For shipping, plan for weekday delivery only, 10:00 am – 4:00 pm.* All samples should be delivered to:</p>
@@ -334,6 +338,26 @@
       </div>
    </section>
 
+	<!---Data Delivery---
+
+	<section id="Data">
+		<div class="container">
+			<hr style="border-color:white">
+      </div>
+   </section>
+	<section>
+		<div class="container">
+       	<div class="row">
+          	<div class="col-lg-8 mb-4 offset-xl-1 col-xl-10">
+          		<h3 style="color:#659AD2" class="text-left">DATA DELIVERY</h3>
+					<hr>
+					<p>One of our computational specialists will notify you when sequencing is complete and your basecalled data are available. Our standard protocol provides unaligned BAM files including methylation tags, delivered via ____. We can also provide FASTQs if requested.</p>
+					<p>Sequencing data are retained until you notify us that it has been downloaded, for a maximum of ___ months after completion of sequencing. Researchers are responsible for downloading and securely archiving their data before the retention period expires. We do not retain or archive data once it has been downloaded.</p>
+					<p>If you would prefer to basecall your data yourself, let us know and we can deliver POD5 files. However, because these files take up significantly more server space, so we can only store them </p>
+          	</div>
+		  	</div>
+      </div>
+   </section>--->
 
 
 <!---Footer--->
