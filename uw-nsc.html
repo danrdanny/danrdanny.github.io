@@ -15,7 +15,7 @@
 
 <body>
 
-	<!---Navbar--->
+<!---Navbar--->
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="index.html" target="_blank" rel="noopener noreferrer"><img src="images/MillerLabLogo-Mark-Reverse.png" alt="Miller Lab" width="60" id="Home"></a>
@@ -35,22 +35,23 @@
 				  	<span class="sr-only">(current)</span></a> </li>
           	<li class="nav-item">
 			 		<a class="nav-link text-white" href="#CoreServices">Services</a> </li>
-	          <li class="nav-item">
+          	<li class="nav-item">
+				  	<a class="nav-link text-white" href="#Data">Data Delivery</a> </li>
+	         <li class="nav-item">
 			  		<a class="nav-link text-white" href="#Rates">Rates</a> </li>
    	      <li class="nav-item">
 			  		<a class="nav-link text-white" href="#SamplePrep">Sample Prep</a> </li>
    	      <li class="nav-item">
 				  	<a class="nav-link text-white" href="#SampleSubmit">Sample Submission</a> </li>
-<!---   	      <li class="nav-item">
-				  	<a class="nav-link text-white" href="#Data">Data Delivery</a> </li>
-   	      <li class="nav-item">
+  	    		<li class="nav-item">
+ <!---  	<li class="nav-item">
 				  	<a class="nav-link text-white" href="#Payment">Payment</a> </li> -->
         	</ul>
       </div>
    </nav>
 
 
-	<!---Banner--->
+<!---Banner--->
 
    <header>
 		<img class="embed-responsive" src="images/UW-NSC_banner.png" alt="NSC banner" id="top">
@@ -82,7 +83,7 @@
   	</section>
 
 
-	<!---Services--->
+<!---Services--->
 
 
 	<section id="CoreServices">
@@ -126,16 +127,41 @@
 									</ul>
 
    	       			<h5 style="color:#062E59" class="text-left mt-5"><strong>Analysis</strong></h5>
-				  				<p>One hour of analysis is charged for each flow cell. This charge covers computational infrastructure, data storage and transfer, basecalling, and running samples through our standard in-house analysis pipeline. For native DNA, our standard pipeline calls 5mCG/5hmCG modifications and supports multiplexed, barcoded samples. Methylation calls are provided as tags in the unaligned BAM files we deliver when sequencing is complete. Our pipeline is optimized for human samples; data for other organisms may be delivered in other formats and may incur extra analysis charges.</p>
-								<p>Additional analysis services are available for an additional charge and can be tailored to the specific needs of your study. For example, our team can assist with calling additional methylation models, filtering and prioritizing structural variants, identifying repeat expansions, analyzing other complex variants, and providing data interpretation support for researchers who want to analyze their own data.</p>
-							<p class="text-left"><strong>We can help you determine which sequencing and analysis services are right for your project. <a href="mailto:MillerLabSeq@uw.edu?Subject=UW NSC Consultation Request">Contact us</a> to set up a consultation and receive an estimate. </strong></p>
+				  				<p>One hour of analysis is charged for each flow cell. This charge covers computational infrastructure, data storage and transfer, basecalling, and running samples through our standard in-house alignment based analysis pipeline.</p>
+								<p>For native DNA sequencing projects, our standard workflow calls 5mCG/5hmCG modifications along with canonical bases and supports multiplexed, barcoded samples and/or adaptive sampling. We use Dorado, ONT's recommended basecaller, to generate all FASTQs and can use other published dorado basecalling models upon request. Tertiary analysis includes haplotype-phased minimap2 alignment to the GRch38 reference, short variant calls using Clair3, structural variant calls using Sniffles2, copy number variant calls using QDNASeq, tandem repeat expansion calls in medically relevant genes using VAMOS, QC visualizations, variant annotation using NeedLR and VEP, and variant ranking.</p>
+								<p>Our tertiary analysis workflow is optimized for human samples and is unavailable for other organisms. Data and analysis for other organisms may be produced subject to additional analysis charges, depending on complexity and availability. For example, our team can assist with calling additional methylation models,  identifying repeat expansions, analyzing other complex variants, and providing data interpretation support for researchers who want assistance analyzing data.</p>
+							<p class="text-left"><strong>We can help you determine which sequencing and analysis services are right for your project. <a href="mailto:MillerLabSeq@uw.edu?Subject=UW NSC Consultation Request">Contact us</a> to set up a consultation and receive an estimate.</strong></p>
+         	</div>
+		  	</div>
+      </div>
+   </section>
+
+
+<!---Data Delivery--->
+
+
+	<section id="Data">
+		<div class="container">
+		<hr style="border-color:white">
+      </div>
+   </section>
+
+	<section>
+		<div class="container">
+       	<div class="row">
+          	<div class="col-lg-8 mb-4 offset-xl-1 col-xl-10">
+          		<h3 style="color:#659AD2" class="text-left">DATA DELIVERY & RETENTION POLICY</h3>
+					<hr>
+								<p>All data output is shared over a secure SFTP server. If your institution does not allow SFTP connection, we can work with you to find alternative means of delivery.</p>
+								<p>In most cases, you will receive only the aligned bam files and tertiary analysis products for each submitted sample. Raw data and intermediate forms, such as the unaligned sequences, are available upon request. The average size of a raw sequence dataset is ~1 Tb per sample — please have a permanent data storage plan in place to receive this data if requested. Tertiary analysis datasets range from 100–200 Gb per sample.</p>
+								<p>Raw sequencer output, unmapped sequencing data, and analysis outputs will be retained for <strong>up to a maximum of 6 months</strong> after initial notification of delivery.</p>
           	</div>
 		  	</div>
       </div>
    </section>
 
 
-	<!---Rates--->
+<!---Rates--->
 
 	<section id="Rates">
 		<div class="container">
@@ -160,76 +186,76 @@
   						<tbody>
    	 					<tr>
       						<td>Cell Culture</td>
-     							<td class="text-center">$116.72</td>
-     							<td class="text-center">$134.93</td>
-     							<td class="text-center">$148.42</td>
+     							<td class="text-center">$109.75</td>
+     							<td class="text-center">$126.87</td>
+     							<td class="text-center">$145.90</td>
     						</tr>
 							<tr>
     						<tr style="background-color:#ECECEC">
 								<td>Nucleotide Extraction</td>
-     							<td class="text-center">$119.62</td>
-     							<td class="text-center">$138.29</td>
-     							<td class="text-center">$152.11</td>
+     							<td class="text-center">$53.32</td>
+     							<td class="text-center">$61.64</td>
+     							<td class="text-center">$70.88</td>
     						</tr>
     						<tr>
       						<td>Sample QC</td>
-     							<td class="text-center">$55.79</td>
-     							<td class="text-center">$64.49</td>
-     							<td class="text-center">$70.94</td>
+     							<td class="text-center">$75.17</td>
+     							<td class="text-center">$86.90</td>
+     							<td class="text-center">$99.93</td>
     						</tr>
     						<tr style="background-color:#ECECEC">
       						<td>Sample Cleanup</td>
-     							<td class="text-center">$41.99</td>
-     							<td class="text-center">$48.54</td>
-     							<td class="text-center">$53.40</td>
+     							<td class="text-center">$30.31</td>
+     							<td class="text-center">$35.04</td>
+     							<td class="text-center">$40.29</td>
     						</tr>
     						<tr>
       						<td>Shearing</td>
-     							<td class="text-center">$48.85</td>
-     							<td class="text-center">$56.47</td>
-     							<td class="text-center">$62.11</td>
+     							<td class="text-center">$42.65</td>
+     							<td class="text-center">$49.30</td>
+     							<td class="text-center">$56.69</td>
     						</tr>
     						<tr style="background-color:#ECECEC">
       						<td>Size Selection</td>
-     							<td class="text-center">$99.38</td>
-     							<td class="text-center">$114.88</td>
-     							<td class="text-center">$162.37</td>
+     							<td class="text-center">$38.09</td>
+     							<td class="text-center">$44.03</td>
+     							<td class="text-center">$50.63</td>
     						</tr>
     						<tr>
       						<td>Library Preparation</td>
-     							<td class="text-center">$259.72</td>
-     							<td class="text-center">$300.24</td>
-     							<td class="text-center">$330.27</td>
+     							<td class="text-center">$175.81</td>
+     							<td class="text-center">$203.24</td>
+     							<td class="text-center">$233.73</td>
     						</tr>
 							<tr style="background-color:#ECECEC">
       						<td>Flow Cell</td>
-     							<td class="text-center">$1,238.95</td>
-     							<td class="text-center">$1,432.22</td>
-     							<td class="text-center">$1,575.45</td>
+     							<td class="text-center">$861.14</td>
+     							<td class="text-center">$995.48</td>
+     							<td class="text-center">$1,144.80</td>
     						</tr>
     						<tr>
       						<td>Barcoding – Rapid Prep (per sample)</td>
-     							<td class="text-center">$41.77</td>
-     							<td class="text-center">$48.29</td>
-     							<td class="text-center">$53.12</td>
+     							<td class="text-center">$71.77</td>
+     							<td class="text-center">$82.96 </td>
+     							<td class="text-center">$95.41</td>
     						</tr>
     						<tr style="background-color:#ECECEC">
       						<td>Barcoding – Ligation Prep (per sample)</td>
-     							<td class="text-center">$84.16</td>
-     							<td class="text-center">$97.28</td>
-     							<td class="text-center">$107.01</td>
+     							<td class="text-center">$145.94</td>
+     							<td class="text-center">$168.71</td>
+     							<td class="text-center">$194.01</td>
     						</tr>
     						<tr>
       						<td>Barcoding – Pool (4–24 samples per pool)</td>
-     							<td class="text-center">$106.24</td>
-     							<td class="text-center">$122.81</td>
-     							<td class="text-center">$135.09</td>
+     							<td class="text-center">$119.61</td>
+     							<td class="text-center">$138.27</td>
+     							<td class="text-center">$159.01</td>
     						</tr>
     						<tr style="background-color:#ECECEC">
       						<td>Analysis (per hour)</td>
-    	 						<td class="text-center">$218.36</td>
-    	 						<td class="text-center">$252.42</td>
-    	 						<td class="text-center">$277.66</td>
+    	 						<td class="text-center">$269.53</td>
+    	 						<td class="text-center">$311.58 </td>
+    	 						<td class="text-center">$358.31</td>
     						</tr>
 						</tbody>
 					</table>
@@ -241,7 +267,7 @@
    </section>
 
 
-	<!---Sample Prep instruction--->
+<!---Sample Prep instruction--->
 
 	<section id="SamplePrep">
 		<div class="container">
@@ -304,7 +330,7 @@
    </section>
 
 
-	<!---Sample Submission--->
+<!---Sample Submission--->
 
 	<section id="SampleSubmit">
 		<div class="container">
@@ -338,26 +364,6 @@
       </div>
    </section>
 
-	<!---Data Delivery---
-
-	<section id="Data">
-		<div class="container">
-			<hr style="border-color:white">
-      </div>
-   </section>
-	<section>
-		<div class="container">
-       	<div class="row">
-          	<div class="col-lg-8 mb-4 offset-xl-1 col-xl-10">
-          		<h3 style="color:#659AD2" class="text-left">DATA DELIVERY</h3>
-					<hr>
-					<p>One of our computational specialists will notify you when sequencing is complete and your basecalled data are available. Our standard protocol provides unaligned BAM files including methylation tags, delivered via ____. We can also provide FASTQs if requested.</p>
-					<p>Sequencing data are retained until you notify us that it has been downloaded, for a maximum of ___ months after completion of sequencing. Researchers are responsible for downloading and securely archiving their data before the retention period expires. We do not retain or archive data once it has been downloaded.</p>
-					<p>If you would prefer to basecall your data yourself, let us know and we can deliver POD5 files. However, because these files take up significantly more server space, so we can only store them </p>
-          	</div>
-		  	</div>
-      </div>
-   </section>--->
 
 
 <!---Footer--->
